@@ -1,0 +1,26 @@
+footer {
+  background-color: #6e7dabff;
+  padding: 2rem 0;
+
+  .menu-item {
+    a {
+      text-transform: inherit;
+
+      &.current-item a {
+        color: #d1e3ddff;
+        border-color: #d1e3ddff;
+      }
+    }
+  }
+
+  .logo {
+    padding: 0.5em 1em;
+    max-width: 125px;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #d283aa;
+    clear: both;
+    text-align: center;
+  }
+}

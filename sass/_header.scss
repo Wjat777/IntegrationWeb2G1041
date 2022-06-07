@@ -1,0 +1,14 @@
+.logo {
+  float: left;
+  width: 100%;
+  max-width: 180px;
+  padding: 1rem 0;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+header {
+  background-color: $color-header;
+}
