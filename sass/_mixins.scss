@@ -1,0 +1,33 @@
+
+@mixin mon-button(
+    $coul-bkg:red, $coul-border:red, $coul-txt:#fff,
+    $rad:0.3em, $pad:0.7em, $icon:"")
+  {
+  background-color: $coul-bkg;
+  border: 1px solid $coul-border;
+  border-radius: $rad;
+  padding: $pad $pad*2;
+  margin: $pad/2;
+  display: inline-block;
+  color: $coul-txt;
+  transition: all 0.5s;
+  @if $icon != ""{
+    &:before{
+      content: $icon;
+      font-size: 1em;
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-right: $pad;
+    }
+  }
+  &:hover{
+    @if $coul-bkg == $color-background {
+      border-color: darken($coul-txt, 20);
+      color: darken($coul-txt, 20);
+    } @else {
+      background-color: darken($coul-bkg, 15);
+      border-color: darken($coul-border, 15);
+      color: $coul-txt;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use "variables";
+nav {
+  float: right;
+}
+
+.menu-item {
+  float: left;
+  margin-right: 0.5em;
+  position: relative;
+
+  a {
+    display: block;
+    padding: $pad-std;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $color-background;
+    }
+  }
+
+  &.current-item a {
+    color: $color-principale-fonce;
+    border-bottom: 3px solid $color-principale-fonce;
+  }
+}
